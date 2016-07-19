@@ -94,7 +94,7 @@ public class HeartView: UIView {
 
         let heartCenterX = center.x
         let heartSize = bounds.width
-        let viewHeight = view.bounds.height
+        let viewHeight = view.bounds.height / 2
 
         //random end point
         let endPointX = heartCenterX + (endPointDirection.rawValue * randomNumber(2 * heartSize))

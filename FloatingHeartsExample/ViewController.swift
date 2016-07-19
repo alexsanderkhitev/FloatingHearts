@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         let heart = HeartView(frame: CGRectMake(0, 0, HeartAttributes.heartSize, HeartAttributes.heartSize))
         view.addSubview(heart)
         let fountainX = HeartAttributes.heartSize / 2.0 + 20
-        let fountainY = view.bounds.height - HeartAttributes.heartSize / 2.0 - 10
+        let fountainY = view.bounds.height / 2//- HeartAttributes.heartSize / 2.0 - 10
         heart.center = CGPoint(x: fountainX, y: fountainY)
         heart.animateInView(view)
     }
